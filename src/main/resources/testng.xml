@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail Test Suite">
+
+	<listeners>
+		<listener class-name="ExtentReport.ExtentReportListenerNg" />
+	</listeners>
+
+
+	<test name="Gmail Test Cases">
+		<classes>
+			<class name="TestCases.LandingPageGmailTestCase"></class>
+			<class name="TestCases.SigninPageGmailTestCase"></class>
+			<class name="TestCases.PasswordPageGmailTestCase"></class>
+
+		</classes>
+	</test>
+</suite>
