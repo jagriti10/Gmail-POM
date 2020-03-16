@@ -1,0 +1,11 @@
+gmail\PageFunction\LandingPageGmail.class
+configManager\testBase.class
+gmail\TestCases\PasswordPageGmailTestCase.class
+configManager\TestUtil.class
+gmail\ObjectRepository\SigninGmailOR.class
+gmail\PageFunction\PasswordGmail.class
+gmail\TestCases\LandingPageGmailTestCase.class
+gmail\TestCases\SigninPageGmailTestCase.class
+gmail\ObjectRepository\LandingPageGmailOR.class
+gmail\ObjectRepository\PasswordGmailOR.class
+gmail\PageFunction\SigninGmail.class
