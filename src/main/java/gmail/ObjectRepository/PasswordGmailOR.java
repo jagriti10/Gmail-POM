@@ -13,6 +13,13 @@ public class PasswordGmailOR extends testBase {
 	@FindBy(xpath="//title")
 	protected WebElement title;
 	
+	public WebElement getTitle() {
+		return title;
+	}
+
+	public void setTitle(WebElement title) {
+		this.title = title;
+	}
 	@FindBy(name="password")
 	protected WebElement typePass;
 	

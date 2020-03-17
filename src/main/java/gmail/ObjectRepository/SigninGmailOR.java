@@ -9,11 +9,11 @@ import configManager.testBase;
 
 public class SigninGmailOR extends testBase {
 	
-	public SigninGmailOR() {
+	public SigninGmailOR(){
 		  PageFactory.initElements(driver, this);
 		}
 	
-	@FindBy(id="identifierId")
+	@FindBy(name="identifier")
 	protected WebElement typeEmail;
 	
 	@FindBy(id="identifierNext")

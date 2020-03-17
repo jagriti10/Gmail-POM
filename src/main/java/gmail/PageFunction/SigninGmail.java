@@ -10,21 +10,20 @@ import gmail.ObjectRepository.SigninGmailOR;
 public class SigninGmail extends SigninGmailOR {
 	
 	public SigninGmail() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 	}
 
 	public void siginInput(String em){
 		typeEmail.sendKeys(em);
-		//emailnext.click();
-							}
+		//emailNext.click();
+						}
 	
 	public PasswordGmail clickOnNext() {
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-	js.executeScript("arguments[0].click();", emailNext);
+	emailNext.click();
 	return new PasswordGmail();
 	}
 	
 	public boolean verifyCorrectEmail() {
-		return typeEmail.isDisplayed();
+	return typeEmail.isDisplayed();
 			}
 }

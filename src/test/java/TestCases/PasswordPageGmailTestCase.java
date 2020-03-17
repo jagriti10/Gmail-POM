@@ -20,17 +20,28 @@ public class PasswordPageGmailTestCase extends testBase {
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-		signin.siginInput(prop.getProperty("username")); 
+		pswdTest=new PasswordGmail();
+		signin= new SigninGmail();
+		signin.siginInput(prop.getProperty("username"));
+		signin.clickOnNext();
+		 
 	}
-	@Test(priority=2)
-	public void verifyEmailTyped(){
-		 pswdTest.inputPass(prop.getProperty("password"));
-	}
+	
 	@Test(priority=1)
 	public void verifyTitle() {
 		String PasswordPageTitle=  pswdTest.verifyPasswordPageTitle();
-		Assert.assertEquals(PasswordPageTitle,"Gmail","Password page title not matched");
-				
+		Assert.assertEquals(PasswordPageTitle,"Sign in – Google accounts","Password page title not matched");
+	}
+	
+	@Test(priority=2)
+	public void verifyPassTyped(){
+		 pswdTest.pswdInput(prop.getProperty("password"));
+		 Assert.assertTrue(pswdTest.verifyCorrectPass());
+	}
+	
+	@Test(priority=3)
+	public void verifyClickOnNextLink() {
+		pswdTest.clickOnNext();
 	}
 	@AfterMethod
 	public void teardown() {

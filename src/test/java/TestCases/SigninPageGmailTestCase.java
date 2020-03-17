@@ -10,9 +10,10 @@ import gmail.PageFunction.PasswordGmail;
 import gmail.PageFunction.SigninGmail;
 
 public class SigninPageGmailTestCase extends testBase {
+
 	SigninGmail signin;
 	PasswordGmail pswd;
-	public SigninPageGmailTestCase() {
+	public SigninPageGmailTestCase(){
 		super();
 	}
 
@@ -35,8 +36,6 @@ public class SigninPageGmailTestCase extends testBase {
 	}
 	
 	@AfterMethod
-	public void teardown() {
-		driver.quit();
-	}
+	public void teardown();
 }
 

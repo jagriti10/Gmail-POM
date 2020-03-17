@@ -61,17 +61,10 @@ public class testBase {
 		public static void setDriver(WebDriver driver) {
 			testBase.driver = driver;
 		}
-
-
-			
 		
-		
-		
-		
-		
-		
-		
-
-	}
+		public void teardown() {
+			driver.quit();
+		}
+}
 
 

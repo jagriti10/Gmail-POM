@@ -9,10 +9,8 @@
 
 	<test name="Gmail Test Cases">
 		<classes>
-			<class name="TestCases.LandingPageGmailTestCase"></class>
 			<class name="TestCases.SigninPageGmailTestCase"></class>
 			<class name="TestCases.PasswordPageGmailTestCase"></class>
-
 		</classes>
 	</test>
 </suite>
